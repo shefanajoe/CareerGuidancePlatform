@@ -1,0 +1,108 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #0d0d0d; /* Light grey background for the entire page */
+   /* background-image: url('png5.jpg');  URL to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+}
+
+/* Container Style */
+.container {
+    padding: 50px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for container */
+    margin: 20px auto;
+    max-width: 1200px; /* Maximum width for large screens */
+}
+
+/* Header Style */
+.header {
+    margin-bottom: 50px;
+}
+
+.header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem; /* Larger font size for emphasis */
+    margin: 0;
+    color: #007bff; /* Bright blue color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+}
+
+.subtext {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem; /* Slightly larger font size */
+    color: #666; /* Darker grey color */
+    margin: 10px 0;
+    font-weight: 300; /* Light font weight */
+}
+
+/* Assessment Options Container */
+.assessment-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Assessment Option */
+.assessment-option {
+    background-color: #ffffff; /* White background for the option cards */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for cards */
+    padding: 25px;
+    width: 240px; /* Slightly wider for better spacing */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    margin: 15px; /* Margin between cards */
+}
+
+/* Assessment Option Image */
+.assessment-option img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 15px; /* Space below the image */
+}
+
+/* Assessment Option Text */
+.assessment-option p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem; /* Slightly larger font size */
+    margin: 0; /* Remove margin to reduce extra space */
+    color: #333; /* Consistent text color */
+    font-weight: 600; /* Semi-bold font weight */
+}
+
+/* Links within Assessment Options */
+.assessment-option a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+    display: block; /* Make link block-level for better click area */
+}
+
+/* Hover Effect */
+.assessment-option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    background-color: #f0f8ff; /* Light blue background on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .assessment-options {
+        flex-direction: column; /* Stack options vertically on smaller screens */
+        align-items: center;
+    }
+
+    .assessment-option {
+        width: 90%; /* Full width on smaller screens */
+        max-width: 400px; /* Maximum width for better readability */
+    }
+}
