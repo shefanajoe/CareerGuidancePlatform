@@ -1,0 +1,1 @@
+This is a career guidance platform designed to help students understand their personality and interests through an interactive quiz. While the quiz results may not yet be fully personalized, the primary goal of this project is to develop a personalized career guidance platform tailored to individual preferences and strengths.
