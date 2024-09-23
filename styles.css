@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    background-image: url('bg1.webp'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    min-height: 100vh; /* Ensure content extends beyond viewport height */
+    box-sizing: border-box;
+}
+
+.header {
+    position: relative;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* Add a blur effect for better readability */
+}
+
+.header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.subtext {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.get-started-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient background */
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.get-started-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #003d7a); /* Darker gradient on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo img {
+    height: 60px; /* Adjust size as needed */
+    transition: transform 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Slightly zooms in the logo on hover */
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtext {
+        font-size: 1rem;
+    }
+
+    .get-started-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Styles for Scrolling Content */
+.scroll-content {
+    padding: 50px;
+    background-image: url('bg2.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f7f0f0fd;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgb(183, 60, 60);
+    max-width: 800px;
+    margin: 50px auto;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scroll-content.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f8f4f4; /* Ensure text is readable */
+}
+
+.scroll-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #f5f1f1; /* Ensure text is readable */
+}
+
+.scroll-content ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.scroll-content li {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: #f6f0f0;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
