@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>General Assessment</h1>
+            <p class="subtext">Start your journey with a comprehensive student assessment.</p>
+            <a href="next-page.html" class="get-started-btn">Get Started</a>
+        </div>
+        <div class="logo">
+            <!-- Add your logo here -->
+            <img src="png2.jpg" alt="Logo">
+        </div>
+    </div>
+
+    <!-- Content that should be visible on scroll -->
+    <div class="scroll-content">
+        <h2>WHY TAKE OUR TESTS?</h2>
+        <p><strong>1. Self-Awareness:</strong></p>
+        <ul>
+            <li><strong>Understanding Strengths and Weaknesses:</strong> Psychometric tests help you identify your strengths and areas for improvement, giving you a clearer picture of your capabilities.</li>
+            <li><strong>Personality Insights:</strong> They provide insights into your personality traits, such as introversion vs. extroversion, thinking vs. feeling, and how these traits might influence your behavior and decision-making.</li>
+        </ul>
+        <p><strong>2. Career Guidance:</strong></p>
+        <ul>
+            <li><strong>Career Fit:</strong> Tests can help you discover careers that align with your personality traits and skills, leading to more satisfying and successful career choices.</li>
+            <li><strong>Skill Assessment:</strong> They can identify your natural talents and preferences, guiding you toward roles that match your abilities.</li>
+        </ul>
+        <p><strong>3. Personal Development:</strong></p>
+        <ul>
+            <li><strong>Growth Areas:</strong> By understanding your psychological profile, you can focus on areas where you may need personal development or growth.</li>
+            <li><strong>Improved Relationships:</strong> Insights from these tests can enhance your understanding of how you interact with others, improving communication and relationships in both personal and professional settings.</li>
+        </ul>
+        <p><strong>4. Educational and Professional Decisions:</strong></p>
+        <ul>
+            <li><strong>Learning Preferences:</strong> Psychometric tests can reveal how you learn best, helping you choose educational approaches or study methods that suit your learning style.</li>
+            <li><strong>Job Fit:</strong> They assist employers and you in understanding whether a particular job or role is a good fit based on your psychological and cognitive profile.</li>
+        </ul>
+        <p><strong>5. Enhanced Self-Improvement:</strong></p>
+        <ul>
+            <li><strong>Goal Setting:</strong> Knowing your strengths and weaknesses allows you to set more realistic and achievable goals.</li>
+            <li><strong>Motivation:</strong> Understanding what drives you and what challenges you can help in developing strategies to stay motivated and overcome obstacles.</li>
+        </ul>
+        <p><strong>6. Preparation for Assessments and Interviews:</strong></p>
+        <ul>
+            <li><strong>Interview Readiness:</strong> Psychometric tests are often used in job recruitment processes. Familiarity with these tests can help you prepare better and perform more confidently in job interviews.</li>
+            <li><strong>Skill Alignment:</strong> They help you understand the skills and traits that employers might be looking for, allowing you to tailor your responses and showcase relevant qualities.</li>
+        </ul>
+    </div>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollContent = document.querySelector('.scroll-content');
+    
+            function handleScroll() {
+                const rect = scrollContent.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    scrollContent.classList.add('in-view');
+                }
+            }
+    
+            window.addEventListener('scroll', handleScroll);
+            handleScroll(); // Check on load
+        });
+    </script>
+    
+</body>
+</html>
