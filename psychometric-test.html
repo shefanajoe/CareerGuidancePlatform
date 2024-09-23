@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychometric Test</title>
+    <link rel="stylesheet" href="psychometric-test.css">
+</head>
+<body>
+    <!-- Start Page -->
+    <div id="start-page">
+        <h1>Welcome to the Psychometric Test</h1>
+        <button id="start-btn">Start Test</button>
+        <button id="restart-btn" class="hidden">Restart Test</button>
+    </div>
+
+    <!-- Test Page -->
+    <div id="test-page" class="hidden">
+        <div id="category-info">
+            <h2 id="category-title"></h2>
+            <p id="category-timer"></p>
+        </div>
+        <div id="question"></div>
+        <div id="options-container"></div>
+    </div>
+
+    <!-- Result Page -->
+    <div id="result-page" class="hidden">
+        <h1>Your Result</h1>
+        <p id="result-description"></p>
+        <button id="restart-btn-result">Restart Test</button>
+    </div>
+    
+
+    <script src="psychometric-test.js"></script>
+</body>
+</html>
